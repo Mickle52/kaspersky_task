@@ -30,10 +30,10 @@ export const CardHeader: FC<Props> = ({data}) => {
       </div>
       <h2 className="header-title">{data.TI}</h2>
       <div className="header-tags">
-        <HeaderTagItem icon='/icons/domen.svg' text={data.DOM} />
-        <HeaderTagItem icon='/icons/flag.svg' text={data.CNTR} />
-        <HeaderTagItem icon='/icons/language.svg' text={data.LANG.toUpperCase()} />
-        <HeaderTagItem icon='/icons/author.svg' text={data.AU.length ? data.AU.join(', ') : '?'} />
+        <HeaderTagItem icon='./icons/domen.svg' text={data.DOM} />
+        <HeaderTagItem icon='./icons/flag.svg' text={data.CNTR} />
+        <HeaderTagItem icon='./icons/language.svg' text={data.LANG.toUpperCase()} />
+        <HeaderTagItem icon='./icons/author.svg' text={data.AU.length ? data.AU.join(', ') : '?'} />
       </div>
     </div>
   );
