@@ -1,6 +1,6 @@
 .card-container {
   width: 70vw;
-  background-color: var(--color-background);
+  background-image: linear-gradient(135deg, var(--color-background), #000000);
   color: white;
   font-weight: 500;
   padding: 15px;
