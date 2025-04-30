@@ -18,7 +18,7 @@ export const CardHeader: FC<Props> = ({data}) => {
         <span className="header-info__traffic text-gray">
           Top Traffic:
           {data.TRAFFIC.map(item => (
-            <div key={item.value}>
+            <div key={crypto.randomUUID()}>
               <span>{item.value}</span>
               <span style={{color: 'white'}}>{`${Math.round(item.count * 100)}%`}</span>
             </div>

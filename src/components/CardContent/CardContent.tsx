@@ -29,8 +29,8 @@ export const CardContent: FC<{data: IData_SnippetNews}> = ({data}) => {
         )}
       </Typography.Paragraph>
       <div className="content-tags">
-        {data.KW.map((item, i) => (
-          <Tag key={i} className="content-tags__item">
+        {data.KW.map((item) => (
+          <Tag key={crypto.randomUUID()} className="content-tags__item">
             {item.value} <span style={{color: 'white'}}>{item.count}</span>
           </Tag>
         ))}
