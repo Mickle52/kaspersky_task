@@ -1,14 +1,13 @@
 import './css/App.css'
-import {data} from './data'
-import NewsCard from './components/NewsCard/NewsCard'
+import {data} from '../src/data'
+import {Card} from './components/Card/Card'
 
 
 function App() {
 
   return (
     <>
-      <h1 className='title'>Hello World</h1>
-      <img src="/favicons/e65d69dc71ab539384fcc63062efdd3d.png" alt=""/>
+      <Card data={data} />
     </>
   )
 }

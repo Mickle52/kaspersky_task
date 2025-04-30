@@ -1,0 +1,8 @@
+.card-container {
+  width: 70vw;
+  background-color: var(--color-background);
+  color: white;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 10px;
+}

@@ -1,0 +1,57 @@
+.card-header {
+  width: 100%;
+}
+
+.header-info {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  width: 100%;
+  align-items: center;
+}
+
+.header-info__traffic {
+  display: flex;
+  gap: 5px;
+}
+
+.header-info__status {
+  margin-left: auto;
+  text-align: center;
+  background-color: green;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+.header-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.header-tags {
+  display: flex;
+  gap: 15px;
+}
+
+.header-tags__item {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--color-light-gray);
+  >img {
+    filter: invert(1);
+  }
+
+  >a {
+    color: var(--color-blue);
+  }
+}
+
+.status-negative {
+  background-color: red;
+}
+
+.text-gray {
+  color: var(--color-light-gray);
+}

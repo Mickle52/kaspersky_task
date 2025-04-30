@@ -1,1 +1,5 @@
+@import './vars.css';
 
+* {
+  font-family: 'Open Sans', sans-serif;
+}

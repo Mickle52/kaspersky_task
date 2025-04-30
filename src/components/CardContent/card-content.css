@@ -1,0 +1,19 @@
+.card-content__text {
+  &:first-child {
+    color: white;
+  }
+
+  > button {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    &::after {
+      content: '▼';
+      scale: 0.7;
+    }
+
+    &[aria-label="Collapse"]::after {
+      rotate: 180deg;
+    }
+  }
+}
