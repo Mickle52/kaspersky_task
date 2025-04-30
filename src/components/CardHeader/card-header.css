@@ -1,5 +1,9 @@
 .card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   width: 100%;
+  margin-bottom: 15px;
 }
 
 .header-info {
@@ -8,6 +12,7 @@
   font-size: 12px;
   width: 100%;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header-info__traffic {
@@ -37,6 +42,7 @@
 .header-tags {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .header-tags__item {
@@ -59,4 +65,38 @@
 
 .text-gray {
   color: var(--color-light-gray);
+}
+
+@media (max-device-width: 768px) {
+  .header-info {
+    gap: 10px;
+  }
+  
+  .header-info__status {
+    margin-left: 0;
+    width: 100%;
+    order: -1;
+  }
+  
+  .header-tags {
+    gap: 10px;
+  }
+  
+  .header-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-info {
+    font-size: 11px;
+  }
+  
+  .header-tags__item {
+    font-size: 12px;
+  }
+  
+  .header-title {
+    font-size: 15px;
+  }
 }
