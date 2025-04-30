@@ -38,6 +38,7 @@ export const CardContent: FC<{data: IData_SnippetNews}> = ({data}) => {
       <a href={data.URL} target="_blank" rel="noreferrer">
         <button className="card-content__button">Original Source</button>
       </a>
+      <p style={{color: 'white', fontSize: '12px', textAlign: 'center'}}>*my email: mickle.simakov@gmail.com</p>
     </div>
   );
 };
